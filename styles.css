@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(135deg, #f8c9d1, #c9f8f4);
+}
+
+h1 {
+    color: #6c5ce7;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 1.2rem;
+    color: #2d3436;
+    margin-bottom: 30px;
+}
+
+.penguin-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.penguin {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    animation: penguinWaddle 2s infinite;
+}
+
+@keyframes penguinWaddle {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(10px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+.roses {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.rose {
+    width: 50px;
+    height: 50px;
+    animation: roseFloat 5s infinite;
+    margin: 0 15px;
+}
+
+@keyframes roseFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
